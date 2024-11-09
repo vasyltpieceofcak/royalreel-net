@@ -1,0 +1,583 @@
+:root {
+    --maxW: calc(100vw - var(--scroll-width));
+    --gap-size: 24px;
+    --gap-size-negative: -24px;
+    --gap-half-size: 12px;
+    --gap-half-size-negative: -12px;
+    --font-primary: "Montserrat",sans-serif;
+    --color-white: #fff;
+    --color-yellow: #E9AF1B;
+    --color-orange: #E9AF1B;
+    --color-red: #d52d37;
+    --color-green: #20aa2e;
+    --color-blue: #886aff;
+    --color-purple: #b251ff;
+    --color-black: #1a1b20;
+    --color-black-hover: #111;
+    --color-black-2: #262832;
+    --color-grey: #5d5f69
+}
+ /* 
+* {
+   box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    overflow-anchor: none;
+    padding: 0
+}
+
+:after,:before {
+    box-sizing: inherit;
+    outline: 0
+}
+
+:active,:focus,:hover,:visited {
+    -webkit-tap-highlight-color: transparent;
+    outline: 0
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.15
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0
+}
+
+img {
+    border: 0;
+    display: block;
+    max-width: 100%;
+    outline: 0
+}
+
+a {
+    background-color: transparent
+}
+
+a,a:active,a:focus,a:hover,a:visited {
+    text-decoration: unset
+}
+
+strong {
+    font-weight: 700
+}
+
+img {
+    border: none;
+    height: auto
+}
+
+em {
+    font-style: italic
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+
+
+body {
+    color: var(--color-grey);
+    font-family: var(--font-primary);
+    font-size: 12px;
+    line-height: 1.25
+}
+
+body p {
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit
+} */
+
+.page-home {
+	margin-bottom: 12px;
+}
+
+.page-home .container {
+    margin: 0 auto;
+    max-width: 100%;
+/*     padding-left: var(--gap-size);
+    padding-right: var(--gap-size); */
+    width: 100%
+}
+
+.page-home .color-white {
+    color: var(--color-white)
+}
+
+.page-home .btn {
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: var(--font-primary);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    height: 36px;
+    min-width: 130px;
+    padding: 0 14px;
+    text-align: center
+}
+
+.page-home .btn {
+    align-items: center;
+    justify-content: center
+}
+
+.bannerButton {
+    transition: all .3s ease;
+    color: white;
+}
+
+.page-home .welcome-banner-wrap {
+    overflow: hidden;
+    padding-top: 85px;
+    position: relative
+}
+
+.page-home .welcome-banner-wrap .slider-banner.swiper-initialized {
+    overflow: unset
+}
+
+.page-home .welcome-banner-wrap .slider-banner .swiper-slide {
+    display: flex;
+    height: auto
+}
+
+.page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner {
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    min-height: 200px;
+    width: 100%
+}
+
+.page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner.color-white {
+    color: var(--color-white)
+}
+
+.page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0
+}
+
+.page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-left {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 35px;
+    padding-left: 60px;
+    padding-top: 35px;
+    position: relative;
+    width: 50%;
+    z-index: 15
+}
+
+.page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-left .section-subtitle {
+    color: inherit;
+    font-family: var(--font-primary);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px
+}
+
+.page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-left .section-title {
+    color: inherit;
+    font-family: var(--font-primary);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.21;
+    margin-bottom: 14px
+}
+
+.page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-left .section-title strong {
+    font-weight: 900
+}
+
+.page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-left .btn-wrap {
+    margin-top: 15px
+}
+
+.page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    width: 50%
+}
+
+.page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right img {
+    bottom: 0;
+    display: block;
+    left: 0;
+    max-width: 650px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    position: absolute;
+    width: 100%;
+    z-index: 5
+}
+
+.page-home .btn-wrap {
+    column-gap: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-left .btn-wrap {
+    margin-top: 15px;
+}
+
+@media (orientation: landscape) {
+    .bannerButton:hover {
+        border: 2px solid white !important;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .page-home .welcome-banner-wrap {
+        max-width: 100%;
+        width: 100%
+    }
+
+    .page-home .welcome-banner-wrap>.container {
+        max-width: 100%;
+        padding: 0;
+        width: 100%
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner {
+        background: transparent;
+        border-radius: 0;
+        position: relative
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .container {
+        padding-left: var(--gap-size);
+        padding-right: var(--gap-size)
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-left {
+        padding-left: 0
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-left .section-title {
+        font-size: 30px
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right img {
+        left: 5%;
+        width: 160%
+    }
+}
+
+@media (max-width: 1024px) {
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-left {
+        width:48%
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right {
+        width: 52%
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right img {
+        left: 2%;
+        width: 125%
+    }
+}
+
+@media (max-width: 991px) {
+
+    .page-home .welcome-banner-wrap {
+        padding-top: 60px
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right img {
+        width: 165%
+    }
+}
+
+@media (max-width: 767px) {
+
+    .page-home .welcome-banner-wrap {
+        padding-top: 15px
+    }
+
+    .page-home .welcome-banner-wrap .container {
+        padding: 0
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner {
+        background: transparent!important
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .container {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-left {
+        background: var(--color-black);
+        color: var(--color-white);
+        height: 100%;
+        padding-bottom: 28px;
+        padding-left: var(--gap-size);
+        padding-right: var(--gap-size);
+        padding-top: 28px;
+        width: 100%
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-left .section-title {
+        font-size: 26px
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-left .section-subtitle {
+        font-size: 16px
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right {
+        position: relative;
+        width: 100%
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right:after {
+        background: var(--gradient);
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 17%;
+        width: 100%;
+        z-index: 0
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right img {
+        left: 0;
+        max-width: unset;
+        position: relative;
+        right: 0;
+        width: 100%;
+        z-index: 5
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        width:100%
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        width:100%
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width:720px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width:960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width:1170px
+    }
+}
+
+@media (min-width: 1366px) {
+    .container {
+        width:1290px
+    }
+}
+
+
+:root {
+    --vh: 100vh;
+    --red: #D42D37;
+    --gray2: #3F4250;
+}
+
+.btn-wrap {
+    column-gap: 10px;
+}
+
+/*.page-home .menu-bar-wrap .search-wrap input {
+    font-size: 16px;
+}
+
+.page-home .menu-bar-wrap .search-wrap input::placeholder {
+    font-size: 16px;
+}*/
+
+.page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right img {
+    position: absolute; /* Position the image absolutely within the div */
+    bottom: 0; /* Align the bottom of the image with the bottom of the div */
+    left: 0; /* Align the left side of the image with the left side of the div */
+    width: 100%; /* Make the image width 100% of the div's width */
+}
+
+@media (orientation: portrait) {
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right img {
+        position: relative;
+    }
+}
+
+.page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right {
+    position: relative; /* Ensure the div has a defined position */
+}
+
+@media (max-width: 1199px) {
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right img {
+        width: 120%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right img {
+        width: 116%;
+    }
+}
+
+@media (max-width: 991px) {
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right img {
+        position: relative;
+    }
+}
+
+
+.swiper-slide {
+    touch-action: none;
+}
+
+#bannerButton {
+    transition: all .3s ease;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .page-home .welcome-banner-wrap .slider-banner .swiper-slide .welcome-banner .col-right img {
+        object-fit: contain;
+    }
+
+    .page-home .welcome-banner-wrap .slider-banner.swiper-initialized {
+        overflow: unset;
+    }
+
+    .swiper-wrapper {
+        min-height: 400px;
+    }
+
+    :root {
+        --background-gradient: 100% 93%;
+    }
+}
+
+@media (max-width: 767px){
+    :root {
+        --background-gradient: 100% 93%;
+    }
+}
+
+@media (orientation: landscape) {
+
+    .swiper {
+        height: 230px;
+    }
+
+    .swiper.slider-banner {
+        overflow: initial;
+    }
+
+    :root {
+        --background-gradient: unset;
+    }
+
+    .page-home .welcome-banner-wrap {
+        padding-top: 30px !important;
+    }
+
+    #bannerButton:hover {
+        border: 2px solid white !important;
+    }
+
+}
+
+/*.modal-reward .reward-block__content .text-muted #cancel-promo:hover {
+    text-decoration: underline !important;
+}*/
+
+
+
+/*Play Screen*/
+
+.modal-form-check-input:not(:checked) {
+	border: 2px solid var(--color-grey);
+	border-radius: 4px;
+	cursor: pointer;
+	height: 12px;
+	width: 20px;
+	z-index: 15;
+}
+/*
+.crypto-details {
+margin-top: 20px;
+width: 100%;
+display: inline-flex;
+justify-content: center;
+align-content: center;
+}
+*/
+
+/* ::selection {
+    background-color: #1a1b20 !important;
+    color: white !important;
+    font-family: var(--font-primary) !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    line-height: 1.2;
+} */
+
+/* body {
+    font-family: var(--font-primary) !important;
+} */
+
+.col-left {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-wrap {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
